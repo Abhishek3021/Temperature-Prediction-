@@ -21,6 +21,12 @@ data = pd.read_csv(file_path)
 
 # Assuming the dataset has columns 'YEAR', 'MO', 'DY', 'HR', and 'T2M' for year, month, day, hour, and temperature variables
 # Extracting features and target variable
+# `YEAR`: Represents the year.
+# `MO`: Represents the month.
+# `DY`: Represents the day.
+# `HR`: Represents the hour.
+# `T2M`: Represents the temperature variable.
+
 X = data[['YEAR', 'MO', 'DY', 'HR']].values  # Assuming 'YEAR', 'MO', 'DY', and 'HR' are the independent variables
 y = data['T2M'].values  # Assuming 'T2M' is the dependent variable
 
